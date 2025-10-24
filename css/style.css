@@ -1,0 +1,75 @@
+/* Custom CSS for Engineering College */
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #d4af37;
+    --accent-color: #2d3748;
+}
+
+body {
+    padding-top: 76px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 2rem 0;
+}
+
+.feature-icon {
+    font-size: 3rem;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.btn-warning {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: #b8941f;
+    border-color: #b8941f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section .row {
+        text-align: center;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+}
+
+/* Form styles */
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+/* Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
